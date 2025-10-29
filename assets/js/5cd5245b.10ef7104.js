@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocu_kb_test=globalThis.webpackChunkdocu_kb_test||[]).push([[8813],{4124:t=>{t.exports=JSON.parse('{"metadata":{"permalink":"/docu-kb-test/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

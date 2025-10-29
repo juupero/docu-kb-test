@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkdocu_kb_test=globalThis.webpackChunkdocu_kb_test||[]).push([[1903],{1912:t=>{t.exports=JSON.parse('{"blogBasePath":"/docu-kb-test/blog","blogTitle":"Blog","authorsListPath":"/docu-kb-test/blog/authors"}')}}]);
