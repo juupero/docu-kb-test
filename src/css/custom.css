@@ -4,27 +4,103 @@
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Primary brand colors - Midaxo orange */
+  --ifm-color-primary: #ff6b35;
+  --ifm-color-primary-dark: #ff5514;
+  --ifm-color-primary-darker: #ff4500;
+  --ifm-color-primary-darkest: #e63e00;
+  --ifm-color-primary-light: #ff8156;
+  --ifm-color-primary-lighter: #ff916b;
+  --ifm-color-primary-lightest: #ffad94;
+  
+  /* Clean white background */
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f8f9fa;
+  
+  /* Typography */
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.6;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  /* Navbar */
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  
+  /* Footer */
+  --ifm-footer-background-color: #f8f9fa;
+  --ifm-footer-color: #333333;
+  --ifm-footer-link-color: #ff6b35;
+  
+  /* Code blocks */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 107, 53, 0.1);
+  
+  /* Borders and dividers */
+  --ifm-color-emphasis-300: #e1e4e8;
+  --ifm-hr-background-color: #e1e4e8;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark mode - keep it professional */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #ff8156;
+  --ifm-color-primary-dark: #ff6b35;
+  --ifm-color-primary-darker: #ff5514;
+  --ifm-color-primary-darkest: #ff4500;
+  --ifm-color-primary-light: #ff916b;
+  --ifm-color-primary-lighter: #ffa080;
+  --ifm-color-primary-lightest: #ffb89f;
+  
+  --ifm-background-color: #1a1a1a;
+  --ifm-background-surface-color: #242424;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 107, 53, 0.15);
+}
+
+/* Clean navbar styling */
+.navbar {
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+/* Smooth footer transition */
+.footer {
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.footer--dark {
+  --ifm-footer-background-color: #f8f9fa;
+  --ifm-footer-color: #333333;
+  --ifm-footer-link-color: #ff6b35;
+}
+
+[data-theme='light'] .footer--dark {
+  background-color: var(--ifm-footer-background-color);
+}
+
+/* Hero section styling */
+.hero {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+/* Button styling */
+.button--primary {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.button--primary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+}
+
+/* Card-like containers */
+.card {
+  background: #ffffff;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Clean, professional spacing */
+.container {
+  max-width: 1200px;
 }
